@@ -12,7 +12,7 @@ if (ereg ( "20[0-9]{2}[0,1]{1}[0-9]{1}_w[0-9]", $dir ) ) {
   $target = opendir ( $dir . "/profiles/" );
   if ( readdir($target) ) {
     rewinddir($target);
-    echo "<table border=1> <tr> <td> <b> Name </b> </td><td> <b> Jicken Wings Link </b> </td> </tr>\n";
+    echo "<table border=1><th> <tr> <td> <b> Name </b> </td><td> <b> Jicken Wings Link </b> </td> </tr> </th>\n";
     $data = array();
     while ($file = readdir ($target) ) {
       if ($file != "." && $file != "..") {
